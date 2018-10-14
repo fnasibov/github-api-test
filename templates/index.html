@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ title }}</title>
+</head>
+<body>
+    <h1>Max comment:</h1>
+    <ul>
+        {% for max_comment_issue in max_comment_issues %}
+            <li>{{ max_comment_issue.title }}</li>
+        {% endfor %}
+    </ul>
+    <h1>Min comment:</h1>
+    <ul>
+        {% for min_comment_issue in min_comment_issues %}
+            <li>{{ min_comment_issue.title }}</li>
+        {% endfor %}
+    </ul>
+    <h1>Greater or equals ten:</h1>
+    <ul>
+        {% for greater_ten_issue in comments_count_greather_ten %}
+            <li>{{ greater_ten_issue.title }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

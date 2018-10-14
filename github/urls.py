@@ -1,7 +1,7 @@
 from django.urls import path
 
-from github.views import homePageView
+from github.views import show_issues
 
 urlpatterns = [
-    path('', homePageView, name='home')
+    path('', show_issues, name='home')
 ]
